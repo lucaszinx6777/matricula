@@ -1,0 +1,22 @@
+import java.util.Queue;
+import java.util.LinkedList;
+
+public class Fila {
+    public static void main(String[] args) {
+        System.out.println("Fila de marcas:");
+
+        Queue<String> marcas = new LinkedList<>();
+
+        marcas.add("nike");
+        marcas.add("adidas");
+        marcas.add("boss");
+        marcas.add("lacoste");
+
+        System.out.println("Topo da fila: " + marcas.peek());
+        System.out.println(marcas);
+        System.out.println("Se a marca que for retirada for: " + marcas.poll());
+        System.out.println("A marca que vai estar no topo da fila será: " + marcas.peek());
+        System.out.println(marcas.isEmpty()?"A fila está vazia":"A fila tem marcas");
+
+    }
+}
